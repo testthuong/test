@@ -22,14 +22,14 @@ gem 'haml-rails'
 gem 'mongoid'
 gem 'execjs'
 gem 'therubyracer'
-gem 'redis'
-gem 'redis-objects'
-gem 'waistband'
-gem 'elasticsearch-model'
-gem 'elasticsearch-rails'
-gem 'tire'
-gem "will_paginate"
-gem 'mongoid-elasticsearch'
+# gem 'redis'
+# gem 'redis-objects'
+# gem 'waistband'
+# gem 'elasticsearch-model'
+# gem 'elasticsearch-rails'
+# gem 'tire'
+# gem "will_paginate"
+# gem 'mongoid-elasticsearch'
 gem 'mina'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
