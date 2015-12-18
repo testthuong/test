@@ -1,0 +1,2 @@
+module ThuongTestHelper
+end

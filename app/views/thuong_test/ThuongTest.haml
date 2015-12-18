@@ -1,0 +1,61 @@
+%form{:action => "/thuong_index", :method => "POST"}
+  %table
+    %tr
+      %td Search
+      %td
+        %input#txtName{:name => "txtSearch", :type => "text",:value=>@txtSearch}
+
+        %input{:type => "submit", :value => "Search",:name=>"btnSearch"}
+
+    %div
+      =@result
+
+
+  %table.aa{'border': 1}
+    %tr
+      %td
+        name
+      %td
+        age
+    -#%tr
+      -#%td
+      -#  = @obj[:name]
+      -#%td
+      -#  = @obj[:age]
+
+
+        =@obj.each do |list|
+        .cc
+          =@list[:name]
+
+
+          %table
+    %tbody
+      - @obj.each do |row|
+        %tr
+          - row.each do |column|
+            %td= column
+
+  %table.aa{'border': 1}
+    %tr
+      %td
+        name
+      %td
+        age
+      %tbody
+      - @obj.each do |row|
+        %tr
+          %td= row[:name]
+          %td= row[:age]
+
+  %table
+    %tr
+      %td Name
+      %td
+        %input#txtName{:name => "txtName", :type => "text",:value=>@txtName}
+    %tr
+      %td Age
+      %td
+        %input#txtAge{:name => "txtAge", :type => "text",:value=>@txtAge}
+  %input{:type => "submit", :value => "Save",:name=>"btnSave"}
+  .des
