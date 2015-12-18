@@ -13,13 +13,13 @@ require 'mina/rbenv'
 #   branch       - Branch name to deploy. (needed by mina/git)
 
 set :domain, '10.0.0.13'
-set :deploy_to, '/home/tech/cc'
+set :deploy_to, '/home/tech/cc2'
 #set :source, '~/SearchThuong'
 set :term_mode, nil
  set :repository, 'git@github.com:testthuong/test.git'#'https://gitlab.chudu24.com/thuong.minh/test.git'
  set :branch, 'master'
 set :foreman_sudo, false
-#set :identity_file, '/root/.ssh/gitlab_public_key'
+set :identity_file, '/home/thuong.minh/.ssh/github'
 # set :pid_file, "#{deploy_to}/shared/tmp/pids/#{rails_env}.pid"
 # set :app_path, lambda { "#{deploy_to}/#{current_path}" }
 # For system-wide RVM install.
